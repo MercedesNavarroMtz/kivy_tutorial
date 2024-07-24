@@ -22,3 +22,20 @@ git clone https://github.com/user/kivy-tutorial.git
 cd kivy-tutorial
 
 python tutorial.py
+
+## Contenido del tutorial
+
+El archivo tutorial.py cubre los siguientes temas:
+
+Configuración básica de Kivy
+Creación de: 
+- Ventanas
+- Botones
+- Desplegables
+- Cuadros de texto
+Guardado de eventos en .txt
+Uso de layouts para organizar widgets
+
+## Recursos adicionales
+
+https://kivy.org/
