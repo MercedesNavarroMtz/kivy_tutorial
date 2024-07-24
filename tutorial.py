@@ -66,10 +66,10 @@ class MainApp(App):
         self.screen_manager.current = 'main'
 
     def on_start_button_pressed(self, instance):
-        self.show_input_popup('datos personales','register.txt', ['21', '22', '23', '24', '25', '26', '27', '28', '29', '30'], width= 53)
+        self.show_input_popup('datos personales','tutorial.txt', ['21', '22', '23', '24', '25', '26', '27', '28', '29', '30'], width= 53)
         now = datetime.datetime.now()
         formatted_time = now.strftime('%Y-%m-%d %H:%M:%S')
-        with open('register.txt', 'a') as file:
+        with open('tutorial.txt', 'a') as file:
             file.write('Datos personales ' + formatted_time + '\n')
         
     def on_start_button_pressed3(self, instance):
@@ -133,9 +133,7 @@ class MainApp(App):
             self.feed_speed_buttons.append(btn)
 
         self.input_text2 = TextInput(hint_text='Nombre', size_hint_y=None, height=70, font_size='18sp')
-        self.input_text4 = Spinner(text='Correo electrónico', 
-                                values=('rosamartinez@ctnaval.com', 'joseantoniogarcia@ctnaval.com', 'jcarlossanz@ctnaval.com'),
-                                size_hint_y=None, height=150, font_size='18sp')
+        self.input_text4 = Spinner(text='Correo electrónico', values=('rosamartinez@ctnaval.com', 'joseantoniogarcia@ctnaval.com', 'jcarlossanz@ctnaval.com'), size_hint_y=None, height=150, font_size='18sp')
 
         save_button = Button(text='Guardar', size_hint_y=None, height=70, font_size='18sp')
         save_button.bind(on_press=lambda instance: self.on_save_button_pressed(self.feed_speed_value,self.input_text2.text,self.input_text4.text))
@@ -165,9 +163,7 @@ class MainApp(App):
         self.popup_box = BoxLayout(orientation='vertical', padding=25, spacing=40)
 
         self.input_text2 = TextInput(hint_text='¿En qué ciudad europea está el Atomium?', size_hint_y=None, height=70, font_size='18sp')
-        self.input_text4 = Spinner(text='¿Cuánto años duró “La Guerra de los Cien Años”?', 
-                                values=('102', '100', '116', '97'),
-                                size_hint_y=None, height=150, font_size='18sp')
+        self.input_text4 = Spinner(text='¿Cuánto años duró “La Guerra de los Cien Años”?', values=('102', '100', '116', '97'), size_hint_y=None, height=150, font_size='18sp')
         
         save_button = Button(text='Guardar', size_hint_y=None, height=70, font_size='18sp')
         save_button.bind(on_press=lambda instance: self.on_button_pressed(self.input_text2.text, self.input_text4.text, name, edad,email))
@@ -214,10 +210,6 @@ class MainApp(App):
         self.correct_response_popup = Popup(title=' Incorrecto :( ', content=popup_box, size_hint=(None, None), size=(300, 270), title_size='20sp')
         self.correct_response_popup.open()
 
-
-  
-
-
     def on_save_comment_pressed(self, instance):        
         self.popup_box = BoxLayout(orientation='vertical', padding=10, spacing=10)
         self.popup_box.size_hint = (None, None)
@@ -231,8 +223,7 @@ class MainApp(App):
         self.popup_box.add_widget(self.input_text2)
         self.popup_box.add_widget(save_button)
 
-        self.popup = Popup(title='Comentarios', content=self.popup_box, size_hint=(None, None),
-                           size=(650, 330), title_size = '20sp')
+        self.popup = Popup(title='Comentarios', content=self.popup_box, size_hint=(None, None), size=(650, 330), title_size = '20sp')
         self.popup.open()
 
 
@@ -255,7 +246,6 @@ class MainApp(App):
         self.popup = Popup(title='Código disponible en GitHub en el siguiente enlace', content=popup_box, size_hint=(None, None), size=(430, 250), title_size = '20sp')
 
         self.popup.open()
-
 
 
 if __name__ == '__main__':
