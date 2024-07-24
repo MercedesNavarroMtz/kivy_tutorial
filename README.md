@@ -28,13 +28,16 @@ python tutorial.py
 El archivo tutorial.py cubre los siguientes temas:
 
 Configuración básica de Kivy
+
 Creación de: 
 - Ventanas
 - Botones
 - Desplegables
 - Cuadros de texto
 Guardado de eventos en .txt
+
 Uso de layouts para organizar widgets
+
 
 ## Recursos adicionales
 
