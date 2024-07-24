@@ -17,6 +17,8 @@ pip install kivy
 
 Para ejecutar el tutorial, simplemente clona este repositorio y ejecuta el archivo tutorial.py:
 
-git clone https://github.com/tu_usuario/kivy-tutorial.git
+git clone https://github.com/user/kivy-tutorial.git
+
 cd kivy-tutorial
+
 python tutorial.py
