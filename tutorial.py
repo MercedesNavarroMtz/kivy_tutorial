@@ -243,7 +243,7 @@ class MainApp(App):
         message_label = Label(text='Enlace GitHub', size_hint_y=None, height=100, font_size='20sp')
         popup_box.add_widget(message_label)
 
-        self.popup = Popup(title='Código disponible en GitHub en el siguiente enlace', content=popup_box, size_hint=(None, None), size=(430, 250), title_size = '20sp')
+        self.popup = Popup(title='Código disponible en GitHub en el siguiente enlace', content=popup_box, size_hint=(None, None), size=(650, 225), title_size = '20sp')
 
         self.popup.open()
 
