@@ -34,6 +34,7 @@ Creación de:
 - Botones
 - Desplegables
 - Cuadros de texto
+
 Guardado de eventos en .txt
 
 Uso de layouts para organizar widgets
